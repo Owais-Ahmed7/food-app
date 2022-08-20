@@ -27,7 +27,7 @@ const HomeMade = ({ setImgDimen, imgDimen }) => {
   const imgRef = React.useRef() 
   React.useEffect(() => {
     setImgDimen({ height: imgRef.current.offsetHeight, width: imgRef.current.offsetWidth });
-  }, [imgDimen])   
+  }, [imgDimen]) 
 
   return (
     <Box sx={{ pt: '2rem', padding: { xs: '2rem', sm: '5rem' }}}>
