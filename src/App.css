@@ -1,38 +1,192 @@
-.App {
-  text-align: center;
+@import "@fontsource/cooper-hewitt";
+
+img {
+    width: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.col-flex {
+    display: flex;
+    flex-direction: column !important;
+    justify-content: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.font-h {
+    font-family: "Cooper Hewitt" !important;
+    font-weight: bolder !important;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.font-p {
+    font-family: "Cooper Hewitt" !important;
+    font-weight: 400 !important;
 }
 
-.App-link {
-  color: #61dafb;
+.app-icons {
+    width: 35%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Navbar */
+
+.navbar {
+    box-shadow: none !important;
+}
+
+/* Header */
+
+h1 {
+    font-size: 4rem;
+}
+
+.arrow-line {
+    z-index: -1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    left: 100%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+}
+
+.header-img1 {
+    width: 57%;
+}
+
+/* How it work */
+
+.work-list {
+    padding-left: 25px;
+}
+
+.work-list li {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+/* Home made cooking */
+
+.homemade-img {
+    width: 80%
+}
+
+/* Happy cooking */
+
+.banner {
+    width: 500px;
+    font-size: 30px;
+    padding: 1rem;
+    background-color: rgba(0,0,0,0.5);
+    margin-left: -25%;   
+}
+
+/* Footer */
+ 
+footer {
+    background-color: #1a1a1a;
+    color: #FFF;
+}
+
+.footer-links {
+    color: #FFF;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+.footer-links:hover {
+    opacity: 0.7;    
+}
+
+/* Media query */
+
+@media screen and (max-width: 1200px) {
+    .header-img1 {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 1110px) {
+    .h1 {
+        font-size: 3.5rem !important;
+    }
+
+    .work-list li {
+        font-size: 16px;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .h1 {
+        font-size: 3rem !important;
+    }
+
+    .header-img1 {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 899px) {
+    .arrow-line {
+        transform: rotate(0.25turn);
+        left: 4%;
+        right: 0;
+        top: 120%;
+        width: 40%;
+        bottom: 0;
+        margin: 0 auto;
+    }
+
+    .col-flex {
+        align-items: center;
+    }
+
+    .h1 {
+        font-size: 2rem !important;
+    }
+
+    .header-img1 {
+        display: none;
+    }
+
+    .header-img2 {
+        margin-top: 2rem;
+        width: 70%;
+    }
+
+    .work-list li {
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 15px;
+    }
+
+    .homemade-img {
+        width: 60%;
+    }
+
+    .banner {
+        margin-left: auto;
+        width: 75%;
+        margin-top: -25%;
+    }
+    
+    .banner h4 {
+        font-size: 20px;
+    }
+
+    .footer-links {
+        margin-top: 1rem;
+    }
+}
+
+@media screen and (min-width: 899px) {
+    .header-img2 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .homemade-img {
+        width: 80%;
+    }
 }
