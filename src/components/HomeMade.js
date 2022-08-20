@@ -22,7 +22,13 @@ const homeMade = [
     }
 ]
 
-const HomeMade = () => {
+const HomeMade = ({ setImgDimen, imgDimen }) => {
+
+  const imgRef = React.useRef() 
+  React.useEffect(() => {
+    setImgDimen({ height: imgRef.current.offsetHeight, width: imgRef.current.offsetWidth })
+  }, [])   
+
   return (
     <Box sx={{ pt: '2rem', padding: { xs: '2rem', sm: '5rem' }}}>
         <Box component="div" sx={{textAlign: 'center', mb: '3rem'}}>
@@ -51,7 +57,7 @@ const HomeMade = () => {
                         </Typography>
                     </Box>
                     <Box component="div" className="col-flex">
-                        <img className="homemade-img" src={Homemade1} alt="" />
+                        <img ref={imgRef} className="homemade-img" src={Homemade1} alt="" />
                     </Box>
                 </Box>
             </Grid>
@@ -75,7 +81,7 @@ const HomeMade = () => {
                         </Typography>
                     </Box>
                     <Box component="div" className="col-flex">
-                        <img className="homemade-img" src={Homemade2} alt="" />
+                        <img style={{height: imgDimen.height, width: imgDimen.width}} className="homemade-img" src={Homemade2} alt="" />
                     </Box>
                 </Box>
             </Grid>

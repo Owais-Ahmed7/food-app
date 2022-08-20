@@ -1,3 +1,4 @@
+import React from "react";
 import './App.css';
 import Work from "./components/Work";
 import HomeMade from "./components/HomeMade";
@@ -9,13 +10,16 @@ import Footer from "./components/Footer"
 import Header from "./components/Header"
 
 function App() {
+
+  const [imgDimen, setImgDimen] = React.useState({ height: '', width: '' });
+
   return (
     <div className="App">
       <Header />
       <Work />
       <HappyCooking />
-      <SimplifyCooking />
-      <HomeMade />
+      <SimplifyCooking imgDimen={imgDimen} />
+      <HomeMade setImgDimen={setImgDimen} imgDimen={imgDimen} />
       <CookingComunity />
       <Download />
       <Footer />

@@ -10,7 +10,7 @@ import CookingHome2 from "../assets/cooking-home2.png";
 
 const primColor = "#85C34A";
 
-const SimplifyCooking = () => {
+const SimplifyCooking = ({ imgDimen }) => {
   return (
     <Box sx={{ pt: '2rem', padding: { xs: '2rem', sm: '5rem' }}}>
         <Box component="div" sx={{textAlign: 'center', mb: '3rem'}}>
@@ -39,7 +39,7 @@ const SimplifyCooking = () => {
                         </Typography>
                     </Box>
                     <Box component="div" className="col-flex">
-                        <img className="homemade-img" src={CookingHome1} alt="" />
+                        <img style={{height: imgDimen.height, width: imgDimen.width}} className="homemade-img" src={CookingHome1} alt="" />
                     </Box>
                 </Box>
             </Grid>
@@ -63,7 +63,7 @@ const SimplifyCooking = () => {
                         </Typography>
                     </Box>
                     <Box component="div" className="col-flex">
-                        <img className="homemade-img" src={CookingHome2} alt="" />
+                        <img style={{height: imgDimen.height, width: imgDimen.width}} className="homemade-img" src={CookingHome2} alt="" />
                     </Box>
                 </Box>
             </Grid>
