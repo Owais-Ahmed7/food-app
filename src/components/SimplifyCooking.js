@@ -75,13 +75,14 @@ const SimplifyCooking = ({ imgDimen }) => {
                     textTransform: 'capitalize',
                     mt: '2rem',
                     backgroundColor: primColor,
-                    borderRadius: '22px',
+                    borderRadius: '25px',
                     border: `1px solid ${primColor}`,
                     color: '#FFF',
-                    p: '0.7rem 1.5rem',
+                    p: '1rem 2rem',
                     '&:hover': {
-                        backgroundColor: '#FFF',
-                        color: primColor,
+                        opacity: '0.7',
+                        backgroundColor: primColor,
+                        color: '#FFF',
                     }
                 }}
             >

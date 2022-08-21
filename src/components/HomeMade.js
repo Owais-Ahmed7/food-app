@@ -32,7 +32,7 @@ const HomeMade = ({ setImgDimen, imgDimen }) => {
   return (
     <Box sx={{ pt: '2rem', padding: { xs: '2rem', sm: '5rem' }}}>
         <Box component="div" sx={{textAlign: 'center', mb: '3rem'}}>
-            <Typography className="font-p" variant="h2" fontWeight="600" sx={{fontSize: { xs: '2.3rem', sm: '4rem' }, fontWeight: { xs: '500', sm: '600' }}}>
+            <Typography className="font-h" variant="h2" fontWeight="600" sx={{fontSize: { xs: '2.3rem', sm: '4rem' }, fontWeight: { xs: '500', sm: '600' }}}>
                 Homemade Food is More Enjoyable
             </Typography>
         </Box>
@@ -45,7 +45,7 @@ const HomeMade = ({ setImgDimen, imgDimen }) => {
                     justifyContent={'center'}
                 >
                     <Box component="div" className="col-flex" sx={{m: '2rem 0'}}>
-                        <Typography variant="h4" fontWeight="600">
+                        <Typography className="font-h" variant="h4" fontWeight="600">
                             Connect
                         </Typography>
                         <Typography className="font-p" variant="p" sx={{m: '1rem 0'}}>
@@ -69,7 +69,7 @@ const HomeMade = ({ setImgDimen, imgDimen }) => {
                     justifyContent={'center'}
                 >
                     <Box component="div" className="col-flex" sx={{m: '2rem 0'}}>
-                        <Typography variant="h4" fontWeight="600">
+                        <Typography className="font-h" variant="h4" fontWeight="600">
                             Create
                         </Typography>
                         <Typography className="font-p" variant="p" sx={{m: '1rem 0'}}>
@@ -93,13 +93,14 @@ const HomeMade = ({ setImgDimen, imgDimen }) => {
                     textTransform: 'capitalize',
                     mt: '2rem',
                     backgroundColor: primColor,
-                    borderRadius: '22px',
+                    borderRadius: '25px',
                     border: `1px solid ${primColor}`,
                     color: '#FFF',
-                    p: '0.7rem 1.5rem',
+                    p: '1rem 2rem',
                     '&:hover': {
-                        backgroundColor: '#FFF',
-                        color: primColor,
+                        opacity: '0.7',
+                        backgroundColor: primColor,
+                        color: '#FFF',
                     }
                 }}
             >

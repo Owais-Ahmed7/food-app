@@ -1,4 +1,5 @@
-@import "@fontsource/cooper-hewitt";
+@import "@fontsource/cooper-hewitt/700.css";
+@import "@fontsource/cooper-hewitt/500.css";
 
 img {
     width: 100%;
@@ -12,12 +13,12 @@ img {
 
 .font-h {
     font-family: "Cooper Hewitt" !important;
-    font-weight: bolder !important;
+    font-weight: 700 !important;
 }
 
 .font-p {
     font-family: "Cooper Hewitt" !important;
-    font-weight: 400 !important;
+    font-weight: 500 !important;
 }
 
 .app-icons {
@@ -131,7 +132,7 @@ footer {
         transform: rotate(0.25turn);
         left: 4%;
         right: 0;
-        top: 120%;
+        top: 135%;
         width: 40%;
         bottom: 0;
         margin: 0 auto;
@@ -142,7 +143,7 @@ footer {
     }
 
     .h1 {
-        font-size: 2rem !important;
+        font-size: 1.9rem !important;
     }
 
     .header-img1 {

@@ -25,17 +25,17 @@ const Download = () => {
 
   return (
     <Box sx={{ pt: '2rem', padding: { xs: '2rem', sm: '5rem' }}}>
-        <Grid container spacing={2}>
+        <Grid container spacing={2} sx={{paddingBottom: { xs: '2rem', sm: '5rem' }}}>
             <Grid item xs={12} md={4} sx={{textAlign: {xs: 'center', md: 'center', position: 'relative'}}}>
-              <Box component="div">
+                <Box component="div">
                     <img className="app-icons" src={downloadIcon} alt="Download App" />
                     <p className="font-p" style={{margin: '1rem auto', width: '80%'}}>
                         Download Culineer from the app store or Google Play
                     </p>
-              </Box>
-              <img className="arrow-line" src={Arrow} alt="Arrow Line" />
-            </Grid>
-            <Grid item xs={12} md={4} sx={{textAlign: {xs: 'center', md: 'center'}, mt: {xs: '10rem', md: '0'}, position: 'relative' }}>
+                </Box>
+                <img className="arrow-line" src={Arrow} alt="Arrow Line" />
+                </Grid>
+                <Grid item xs={12} md={4} sx={{textAlign: {xs: 'center', md: 'center'}, mt: {xs: '10rem', md: '0'}, position: 'relative' }}>
                 <Box component="div">
                     <img className="app-icons" src={searchIcon} alt="Search App" />
                     <p className="font-p" style={{margin: '1rem auto', width: '80%'}}>
@@ -43,8 +43,8 @@ const Download = () => {
                     </p>
                 </Box>
                 <img className="arrow-line" src={Arrow} alt="Arrow Line" />
-            </Grid>
-            <Grid item xs={12} md={4} sx={{textAlign: {xs: 'center', md: 'center' }, mt: {xs: '10rem', md: '0'},}}>
+                </Grid>
+                <Grid item xs={12} md={4} sx={{textAlign: {xs: 'center', md: 'center' }, mt: {xs: '10rem', md: '0'},}}>
                 <Box component="div">
                     <img className="app-icons" src={peopleIcon} alt="App Users" />
                     <p className="font-p" style={{margin: '1rem auto', width: '80%'}}>

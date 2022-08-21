@@ -20,7 +20,7 @@ const Work = () => {
             <Typography className="font-h" variant="h2" fontWeight="600" sx={{fontSize: { xs: '2.7rem', sm: '4rem' }}}>
                 How it works
             </Typography>
-            <Typography className="font-p" variant="p" >
+            <Typography className="font-p" variant="p" sx={{letterSpacing: '2px'}}>
                 Making cooking at home simpler, more inspired, and connected
             </Typography>
         </Box>
@@ -42,9 +42,9 @@ const Work = () => {
                             maxWidth: '150px', 
                             textTransform: 'capitalize',
                             backgroundColor: primColor,
-                            borderRadius: '22px',
+                            borderRadius: '25px',
                             color: '#FFF',
-                            p: '0.7rem 1rem',
+                            p: '1rem 1rem',
                             '&:hover': {
                                 backgroundColor: primColor,
                                 color: '#FFF',

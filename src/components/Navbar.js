@@ -64,14 +64,14 @@ const Navbar = (props) => {
           </IconButton>
           <Box sx={{ display: { xs: 'none', sm: 'block' }, ml: 'auto',}}>
             {navItems.map((item) => (
-              <Button key={item} sx={{ color: '#000', fontWeight: '600', mr: '10px'  }}>
+              <Button className="font-p" key={item} sx={{ color: '#000', fontWeight: '600', mr: '10px'  }}>
                 {item}
               </Button>
             ))}
-            <Button sx={{ 
+            <Button font className="font-p" sx={{ 
                 textTransform: 'capitalize',
                 letterSpacing: '2px', 
-                color: '#FFF', 
+                color: '#FFF',
                 backgroundColor: '#85C34A',
                 borderRadius: '20px', 
                 p: '0.7rem 1rem',
@@ -81,7 +81,7 @@ const Navbar = (props) => {
                     backgroundColor: '#85C34A',
                 }}}
             >
-                Subscribe
+              Subscribe
             </Button>
           </Box>
         </Toolbar>
