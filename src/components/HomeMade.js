@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useCallback } from 'react'
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
@@ -9,25 +9,16 @@ import Homemade1 from "../assets/homemade1.png";
 import Homemade2 from "../assets/homemade2.png";
 
 const primColor = "#85C34A";
-const homeMade = [
-    {
-        h4: 'Create',
-        p1: 'Spend less time planning and more time creating and enjoying homemade food.',
-        p2: 'Find new inspiration from other Culineer members.'
-    },
-    {
-        h4: 'Connect',
-        p1: 'Join cooking communities for support and inspiration.',
-        p2: 'Connect with Culineer members who share your food interests.'
-    }
-]
 
 const HomeMade = ({ setImgDimen, imgDimen }) => {
 
   const imgRef = React.useRef() 
+  
   React.useEffect(() => {
-    setImgDimen({ height: imgRef.current.offsetHeight, width: imgRef.current.offsetWidth });
-  }, [imgDimen]) 
+    setTimeout(() => {
+        setImgDimen({ height: imgRef.current.clientHeight, width: imgRef.current.clientWidth });
+    }, 2000)
+  }, [imgRef.current]);
 
   return (
     <Box sx={{ pt: '2rem', padding: { xs: '2rem', sm: '5rem' }}}>

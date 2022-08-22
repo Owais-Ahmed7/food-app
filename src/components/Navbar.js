@@ -68,7 +68,7 @@ const Navbar = (props) => {
                 {item}
               </Button>
             ))}
-            <Button font className="font-p" sx={{ 
+            <Button className="font-p" sx={{ 
                 textTransform: 'capitalize',
                 letterSpacing: '2px', 
                 color: '#FFF',

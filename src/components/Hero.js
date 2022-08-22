@@ -22,7 +22,7 @@ const Hero = () => {
                             <br />
                             Community
                         </Typography>
-                        <p variant="p" style={{color: '#FFF'}} className="font-p">
+                        <p variant="p" className="font-p hero-p">
                             Save Organize and shop recipes Find local farmers Connect  with other home cook like you!
                         </p>
                         {/* <Box component="div" display="flex" marginTop="1rem" sx={{ justifyContent: { xs:'center', md: 'left' } }}>*/}

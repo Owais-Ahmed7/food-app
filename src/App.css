@@ -37,6 +37,11 @@ h1 {
     font-size: 4rem;
 }
 
+.hero-p {
+    font-size: 20px;
+    color: #FFF;
+}
+
 .arrow-line {
     z-index: -1;
     position: absolute;
@@ -136,6 +141,11 @@ footer {
         width: 40%;
         bottom: 0;
         margin: 0 auto;
+    }
+
+    
+    .hero-p {
+        font-size: 16px;
     }
 
     .col-flex {
